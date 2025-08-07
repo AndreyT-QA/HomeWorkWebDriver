@@ -12,7 +12,7 @@ import javax.swing.*;
 import java.time.Duration;
 import java.util.List;
 
-public class AbsCommon {
+public abstract class AbsCommon {
 
   protected WebDriver driver;
   protected Actions actions;
@@ -39,15 +39,6 @@ public class AbsCommon {
     $(locator).click();
   }
 
-  protected boolean waiter(long milliseconds) {
-    try {
-      Thread.sleep(milliseconds);
-      return true;
-    } catch (InterruptedException e) {
-      Thread.currentThread().interrupt();
-      return false;
-    }
-  }
   protected void type(By locator, String text) {
     WebElement element = $(locator);
     element.clear();

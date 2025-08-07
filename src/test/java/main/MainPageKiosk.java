@@ -5,13 +5,10 @@ import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
-import org.openqa.selenium.WebDriver;
 
 
-
-public class MainPageKiosk extends AbsBaseTestSuite{
+public class MainPageKiosk extends AbsBaseTestSuite {
   private static final Logger logger = LogManager.getLogger(MainPageKiosk.class);
-
 
   public MainPageKiosk() {
     super.mode = "--kiosk";
