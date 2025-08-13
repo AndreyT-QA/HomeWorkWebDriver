@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 import pages.MainPage;
 
 
-public class MainPageKiosk extends AbsBaseTestSuite {
-  private static final Logger logger = LogManager.getLogger(MainPageKiosk.class);
+public class TestMainPageKiosk extends AbsBaseTestSuite {
+  private static final Logger logger = LogManager.getLogger(TestMainPageKiosk.class);
 
-  public MainPageKiosk() {
+  public TestMainPageKiosk() {
     super.mode = "--kiosk";
   }
 

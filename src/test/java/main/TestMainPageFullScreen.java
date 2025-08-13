@@ -1,17 +1,16 @@
 package main;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
 
-public class MainPageFullScreen extends AbsBaseTestSuite{
-  private static final Logger logger = LogManager.getLogger(MainPageFullScreen.class);
+public class TestMainPageFullScreen extends AbsBaseTestSuite{
+  private static final Logger logger = LogManager.getLogger(TestMainPageFullScreen.class);
 
 
-  public MainPageFullScreen() {
+  public TestMainPageFullScreen() {
     super.mode = "--start-fullscreen";
   }
 
